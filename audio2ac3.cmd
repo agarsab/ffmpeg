@@ -6,7 +6,7 @@ set input_file=%1
 set output_file=%~n1[AC3]%~x1
 
 IF EXIST %input_file% (
-    ffmpeg.exe -hide_banner outpuf-i %input_file% -map 0 -vcodec copy -scodec copy -acodec ac3 -b:a 640k "%output_file%"
+    ffmpeg.exe -hide_banner -i %input_file% -map 0 -vcodec copy -scodec copy -acodec ac3 -b:a 640k "%output_file%"
 ) ELSE (
     echo Usage: %0 input_file_name.ext
     echo Error: File %input_file% not foud
