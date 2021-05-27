@@ -1,2 +1,2 @@
 # ffmpeg
-Just some useful scripts or snippets
+Just some tiny scripts to manage video files with ffmpeg
