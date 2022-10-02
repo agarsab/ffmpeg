@@ -9,12 +9,13 @@
 #               Tested in Microsoft Windows 10
 # ARGUMENTS     -f filename
 #               -d foldername
+# VERSION       2022-10-02
 #================================================================
 
 IF /I "%~1" == "-f" goto File
 IF /I "%~1" == "-d" goto Directory
 
-::Usage
+:Usage
 echo Usage: %0 -f filename.ext
 echo Usage: %0 -d foldername
 exit /b 1
